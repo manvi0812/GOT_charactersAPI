@@ -1,0 +1,28 @@
+.App {
+  letter-spacing: 4px;
+  min-height: 100vh;
+  background: url('../assets/images/background.png') no-repeat fixed center;
+  background-size: cover;
+  opacity: 0.8;
+  @include flex($alignItems: flex-end);
+}
+
+.App-logo {
+  height: 6vmin;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  box-shadow: 6px 6px 18px $black2;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.App-main {
+  height: calc(100vh - 86px);
+  @include flex($direction: column, $justifyContent: space-evenly);
+}

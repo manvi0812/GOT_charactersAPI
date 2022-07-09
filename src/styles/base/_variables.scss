@@ -1,0 +1,66 @@
+$white: #fff;
+$white2: #ddd;
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500;700&display=swap');
+
+$familyPrimary: 'Lexend Deca', sans-serif;
+
+$weightNormal: 400;
+$weightSemiBold: 600;
+$weightBold: 700;
+
+$heading: 1.875rem;
+$subHeading: 1.25rem;
+$bodyText: 0.75rem;
+$bodyTextLarge: 0.875rem;
+$buttonText: 0.75rem;
+$buttonTextLarge: 1rem;
+
+$lineHeightHeadings: 1.1;
+$lineHeightBody: 1.4;
+
+/**
+* Spacing
+*/
+$spacing1: 8px;
+$spacing2: 16px;
+$spacing3: 24px;
+$spacing4: 32px;
+$spacing5: 40px;
+$spacing6: 56px;
+$spacing7: 72px;
+$spacing8: 80px;
+$spacing9: 96px;
+$spacing10: 120px;
+$spacingShortcuts: (
+  'margin': 'm',
+  'padding': 'p'
+);
+$spacingDirections: (
+  'top': 't',
+  'right': 'r',
+  'bottom': 'b',
+  'left': 'l'
+);
+$spacingHorizontal: 'x';
+$spacingVertical: 'y';
+
+/**
+* Other Variables
+*/
+$standardTransition: 0.25s ease-out;
+$radiusSmall: 2px;
+$radius: 4px;
+$radiusLarge: 10px;
+
+// $standardShadowForLightBg: 0px 2px 8px 0 rgba($greyLighter, 0.25);
+// $standardShadowForDarkBg: 0px 10px 30px 0 rgba($black, 0.075);
+
+$black1: #000000;
+$black2: #191b1b;
+$black3: #333333;
+$black4: #939596;
+
+$sidebarWidth: 232px;
+$sidebarWidthMobile: 70vw;
+$paneTitleHeight: 72px;

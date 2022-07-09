@@ -1,0 +1,133 @@
+.char-section {
+  background-color: $black2;
+  min-height: 100vh;
+  color: $white2;
+  overflow: hidden;
+  @include flex($direction: column, $justifyContent: flex-end);
+
+  h1 {
+    font-family: $familyPrimary;
+    letter-spacing: 4px;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-align: left;
+    width: 95%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+
+    &__search-box {
+      @include flex($direction: column);
+      font-family: $familyPrimary;
+      letter-spacing: 2px;
+
+      &--subtext {
+        color: #c4889f;
+        text-align: left;
+      }
+
+      &--input {
+        border-radius: 22px;
+        width: 403px;
+        background-color: #464141;
+        border: none;
+        outline: none;
+        padding: 8px 16px;
+        color: $white2;
+
+        &[placeholder]::-webkit-input-placeholder {
+          color: #ddd;
+        }
+      }
+
+      &--filter-img {
+        transition: all 0.2 linear;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  &__char-list {
+    width: 100%;
+    @include flex($justifyContent: space-around);
+    flex-wrap: wrap;
+
+    &--char-item {
+      width: 22%;
+      height: 500px;
+      border-radius: 22px;
+
+      &--img-wrapper {
+        & > img {
+          width: 100%;
+          border-radius: 22px 22px 0 0;
+          opacity: 0.9;
+        }
+
+        & > span {
+          margin: 0;
+          position: relative;
+          bottom: 34px;
+          border-radius: 0 22px 22px 0;
+          width: fit-content;
+          font-family: $familyPrimary;
+          letter-spacing: 2px;
+          font-size: 14px;
+          padding: 4px 12px;
+        }
+      }
+    }
+  }
+
+  &__my-swiper {
+    height: 40vh;
+    width: 100%;
+    background-color: #2e3034;
+    padding: 1rem 1rem 2rem 1rem !important;
+    margin-top: 8em;
+
+    /* swiper overrides */
+    .swiper {
+      width: 100% !important;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      border-radius: 22px;
+      box-shadow: 4px 4px 26px rgba(221, 221, 221, 0.25);
+    }
+
+    .swiper-pagination {
+      bottom: 0px !important;
+
+      .swiper-pagination-bullet {
+        background-color: #ddd;
+      }
+    }
+  }
+}
