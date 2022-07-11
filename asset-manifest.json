@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/radarr_assignment/static/css/main.118eab04.css",
-    "main.js": "/radarr_assignment/static/js/main.fc663dc1.js",
+    "main.js": "/radarr_assignment/static/js/main.d58ecdbf.js",
     "static/media/background.png": "/radarr_assignment/static/media/background.eb232232fa7d40db669b.png",
     "static/media/logo.jpg": "/radarr_assignment/static/media/logo.bf25231a14268c95c310.jpg",
     "index.html": "/radarr_assignment/index.html",
     "main.118eab04.css.map": "/radarr_assignment/static/css/main.118eab04.css.map",
-    "main.fc663dc1.js.map": "/radarr_assignment/static/js/main.fc663dc1.js.map"
+    "main.d58ecdbf.js.map": "/radarr_assignment/static/js/main.d58ecdbf.js.map"
   },
   "entrypoints": [
     "static/css/main.118eab04.css",
-    "static/js/main.fc663dc1.js"
+    "static/js/main.d58ecdbf.js"
   ]
 }
