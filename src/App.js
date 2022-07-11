@@ -4,51 +4,23 @@ import Landing from './components/Landing';
 
 import * as ROUTES from './routes';
 
+import { Provider } from 'react-redux';
+
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import reducer from './redux/characterReducer';
+
 function App() {
+  const store = createStore(reducer, applyMiddleware(thunk));
+
   return (
-    <Routes>
-      <Route path={ROUTES.LANDING} element={<Landing />} />
-      <Route path={ROUTES.ALLCHARACTERS} element={<Characters />} />
-    </Routes>
+    <Provider store={store}>
+      <Routes>
+        <Route path={ROUTES.LANDING} element={<Landing />} />
+        <Route path={ROUTES.ALLCHARACTERS} element={<Characters />} />
+      </Routes>
+    </Provider>
   );
 }
 
 export default App;
-
-// {
-//   "url": "https://www.anapioficeandfire.com/api/characters/181",
-//   "name": "Benjen Stark",
-//   "gender": "Male",
-//   "culture": "Northmen",
-//   "born": "In 267 AC or later, at Winterfell",
-//   "died": "",
-//   "titles": [
-//       "First Ranger"
-//   ],
-//   "aliases": [
-//       "The Wolf Pup",
-//       "Ben Stark"
-//   ],
-//   "father": "",
-//   "mother": "",
-//   "spouse": "",
-//   "allegiances": [
-//       "https://www.anapioficeandfire.com/api/houses/362"
-//   ],
-//   "books": [
-//       "https://www.anapioficeandfire.com/api/books/1",
-//       "https://www.anapioficeandfire.com/api/books/2",
-//       "https://www.anapioficeandfire.com/api/books/3",
-//       "https://www.anapioficeandfire.com/api/books/5",
-//       "https://www.anapioficeandfire.com/api/books/8"
-//   ],
-//   "povBooks": [],
-//   "tvSeries": [
-//       "Season 1",
-//       "Season 6"
-//   ],
-//   "playedBy": [
-//       "Joseph Mawle",
-//       "Matteo Elezi"
-//   ]
-// },

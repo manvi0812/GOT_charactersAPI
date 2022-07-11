@@ -1,0 +1,15 @@
+.btn {
+  background-color: transparent !important;
+  color: $white2 !important;
+  border-radius: 30px !important;
+  min-width: 115px;
+  font-family: $familyPrimary;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.primary-btn {
+  color: $white !important;
+  background-color: #acd974 !important;
+  box-shadow: 0px 4px 20px rgba(255, 230, 0, 0.54);
+}

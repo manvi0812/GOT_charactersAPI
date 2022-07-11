@@ -25,4 +25,15 @@
 .App-main {
   height: calc(100vh - 86px);
   @include flex($direction: column, $justifyContent: space-evenly);
+
+  &--link {
+    text-decoration: none;
+    color: $white2;
+    font-family: $familyPrimary;
+    font-weight: 900;
+    font-size: 3em;
+    background: rgba(0, 0, 0, 0.61);
+    border-radius: 22px;
+    padding: 10px 2rem;
+  }
 }

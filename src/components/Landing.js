@@ -10,12 +10,12 @@ const Landing = () => {
     <div className='App'>
       <Logo imageSrc={logo} />
       <main className='App-main'>
-        <Link to='/characters' className=''>
+        <Link to='/characters' className='App-main--link'>
           Click to find out the history of GOT Characters
         </Link>
         <iframe
-          width='560'
-          height='315'
+          width='760'
+          height='515'
           src='https://www.youtube.com/embed/TZE9gVF1QbA?autoplay=1'
           title='GOT'
           frameBorder='0'

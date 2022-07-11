@@ -4,6 +4,7 @@
   color: $white2;
   overflow: hidden;
   @include flex($direction: column, $justifyContent: flex-end);
+  @include customScrollbar();
 
   h1 {
     font-family: $familyPrimary;
@@ -29,7 +30,7 @@
         text-align: left;
       }
 
-      &--input {
+      input {
         border-radius: 22px;
         width: 403px;
         background-color: #464141;
@@ -37,6 +38,7 @@
         outline: none;
         padding: 8px 16px;
         color: $white2;
+        margin-right: 10px;
 
         &[placeholder]::-webkit-input-placeholder {
           color: #ddd;
@@ -49,6 +51,37 @@
           transform: scale(1.05);
         }
       }
+
+      &--filter-modal {
+        z-index: 100;
+        background: #b7f1cb;
+        // height: 100px;
+        color: $black2;
+        position: absolute;
+        transform: translate(12rem, 3rem);
+        width: 16rem;
+        border-radius: 22px;
+        padding: 10px;
+        transition: all 0.2s linear;
+        flex-direction: column;
+
+        &--close {
+          width: 10px;
+          height: 10px;
+          right: 14px;
+          position: absolute;
+        }
+        input[type='radio'],
+        input[type='checkbox'] {
+          width: 1em;
+          height: 1em;
+          padding: 0;
+        }
+        input[type='radio']:checked,
+        input[type='checkbox']:checked {
+          background-color: #137134;
+        }
+      }
     }
   }
 
@@ -56,14 +89,19 @@
     width: 100%;
     @include flex($justifyContent: space-around);
     flex-wrap: wrap;
+    padding: 0 25px;
+    row-gap: 30px;
 
     &--char-item {
-      width: 22%;
+      width: 23%;
       height: 500px;
       border-radius: 22px;
 
       &--img-wrapper {
+        height: 160px;
+        
         & > img {
+          height: 160px;
           width: 100%;
           border-radius: 22px 22px 0 0;
           opacity: 0.9;
@@ -81,6 +119,29 @@
           padding: 4px 12px;
         }
       }
+
+      &--body {
+        padding: 10px;
+        font-family: $familyPrimary;
+        letter-spacing: 2px;
+        overflow-y: auto;
+        height: 320px;
+        @include customScrollbar();
+
+        & > p {
+          color: #2e3034;
+          font-weight: 900;
+          margin: 5px;
+
+          .actor-name {
+            font-style: italic;
+          }
+
+          & > span {
+            font-weight: 500;
+          }
+        }
+      }
     }
   }
 
@@ -90,6 +151,7 @@
     background-color: #2e3034;
     padding: 1rem 1rem 2rem 1rem !important;
     margin-top: 8em;
+    z-index: 0 !important;
 
     /* swiper overrides */
     .swiper {

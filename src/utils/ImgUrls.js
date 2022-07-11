@@ -12,7 +12,7 @@ export const imageAddresses = [
 
 export const charImgAddresses = [
   {
-    name: 'Robert Baratheon',
+    name: 'Robert I Baratheon',
     img: 'https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/robert-baratheon-1920.jpg?w=1200'
   },
   {
@@ -40,7 +40,7 @@ export const charImgAddresses = [
     img: 'https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/viserys-targaryen-1920.jpg?w=960'
   },
   {
-    name: 'John Snow',
+    name: 'Jon Snow',
     img: 'https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/john-snow-1920.jpg?w=960'
   },
   {
@@ -56,7 +56,7 @@ export const charImgAddresses = [
     img: 'https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/arya-stark-1920.jpg?w=960'
   },
   {
-    name: 'Bran Stark',
+    name: 'Brandon Stark',
     img: 'https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/character/bran-stark-1920.jpg?w=960'
   },
   {
@@ -192,15 +192,11 @@ export const charImgAddresses = [
     img: 'https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/podrick-payne-1920.jpg?w=960'
   },
   {
-    name: 'Jaqen H’ghar',
+    name: "Jaqen H'ghar",
     img: 'https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/jaqen-hghar-1920.jpg?w=960'
   },
   {
     name: 'Melisandre',
     img: 'https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/melisandre-1920.jpg?w=960'
-  },
-  {
-    name: 'Yara Greyjoy',
-    img: 'https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/yara-greyjoy-1920.jpg?w=960'
   }
 ];
